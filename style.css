@@ -1,0 +1,53 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+}
+
+li {
+    float: left;
+}
+
+li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover{
+    background-color: green;
+}
+
+input[type=text] {
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+
+div.gallery{
+    margin: 50px;
+    float: left;
+}
+
+div.gallery img{
+    width: 200px;
+    height: 300px;
+
+}
+
+.video{
+    float: left;
+    margin: 50px;
+    position: relative;
+    padding-top: 30px;
+}
+
+table,th,td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
