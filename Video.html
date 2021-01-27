@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>VIDEO PAGE</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,18 +11,37 @@
         <ul>
             <li><a href="Text.html">Text</a></li>
             <li><a href="Image.html">Image</a></li>
-            <li><a href="Video.html">Video</a></li>
+            <li class="active"><a href="Video.html">Video</a></li>
             <li><a href="Table.html">Table</a></li>
+            <li><a href="email.html">Email</a></li>
             <li style="float: right;"><a href="index.html">Home</a></li>
         </ul>
     </nav>
-    <div class="video">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/IJiHDmyhE1A"></iframe>
+
+    <div class="video-gallery">
+        <div class="video-container">
+            <video class="MP4" controls onplay= this.pause()>
+                <source src="video/beach.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="video-container"> 
+            <video class="MP4" controls onplay=this.pause()>
+                <source src="video/snow.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="video-container">
+            <video class="MP4" controls onplay=this.pause()>
+                <source src="video/surfing.mp4" type="video/mp4">
+            </video>
+        </div>
     </div>
 
-    <div class="video">
-        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Glny4jSciVI"></iframe>
-    </div>
+    <div id="videoModal" class="modal_v">
+        <video id="og-video" controls class="modal-video">
+            <source src="" type="video/mp4">
+        </video>
+    </div> 
 
+    <script src="script_video.js"></script>
 </body>
 </html>
